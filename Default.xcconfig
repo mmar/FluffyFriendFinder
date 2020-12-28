@@ -1,0 +1,11 @@
+//
+//  Default.xcconfig
+//  FluffyFriendFinder
+//
+//  Created by Matusalem Marques on 28/12/2020.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include? "Developer.xcconfig"

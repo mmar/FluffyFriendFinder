@@ -11,6 +11,8 @@
 		0576516D24B362A400CE7824 /* FluffyFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576516C24B362A400CE7824 /* FluffyFriend.swift */; };
 		0576517024B3B2EB00CE7824 /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576516F24B3B2EB00CE7824 /* VideoPreview.swift */; };
 		0576517424B3D18B00CE7824 /* FluffyFriendDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0576517324B3D18B00CE7824 /* FluffyFriendDetector.swift */; };
+		05963F7E259A67BF00C9EE11 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 05963F7C259A67BF00C9EE11 /* README.md */; };
+		05963F7F259A67BF00C9EE11 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 05963F7D259A67BF00C9EE11 /* LICENSE.txt */; };
 		05AF2D6024AE850B00857E9B /* FluffyFriendFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF2D3724AE850A00857E9B /* FluffyFriendFinderApp.swift */; };
 		05AF2D6424AE850B00857E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AF2D3924AE850A00857E9B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,6 +22,10 @@
 		0576516C24B362A400CE7824 /* FluffyFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluffyFriend.swift; sourceTree = "<group>"; };
 		0576516F24B3B2EB00CE7824 /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
 		0576517324B3D18B00CE7824 /* FluffyFriendDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluffyFriendDetector.swift; sourceTree = "<group>"; };
+		05963F7A259A629400C9EE11 /* Developer.xcconfig.template */ = {isa = PBXFileReference; explicitFileType = text; path = Developer.xcconfig.template; sourceTree = "<group>"; };
+		05963F7C259A67BF00C9EE11 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05963F7D259A67BF00C9EE11 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		05999094259A79D400608D45 /* Default.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
 		05AF2D3724AE850A00857E9B /* FluffyFriendFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FluffyFriendFinderApp.swift; sourceTree = "<group>"; };
 		05AF2D3924AE850A00857E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05AF2D3E24AE850B00857E9B /* FluffyFriendFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluffyFriendFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +46,10 @@
 		05AF2D3124AE850900857E9B = {
 			isa = PBXGroup;
 			children = (
+				05963F7C259A67BF00C9EE11 /* README.md */,
+				05963F7D259A67BF00C9EE11 /* LICENSE.txt */,
+				05999094259A79D400608D45 /* Default.xcconfig */,
+				05963F7A259A629400C9EE11 /* Developer.xcconfig.template */,
 				05AF2D3624AE850A00857E9B /* FluffyFriendFinder */,
 				05AF2D3F24AE850B00857E9B /* Products */,
 			);
@@ -124,6 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05963F7F259A67BF00C9EE11 /* LICENSE.txt in Resources */,
+				05963F7E259A67BF00C9EE11 /* README.md in Resources */,
 				05AF2D6424AE850B00857E9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +160,7 @@
 /* Begin XCBuildConfiguration section */
 		05AF2D6624AE850B00857E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05999094259A79D400608D45 /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -207,6 +220,7 @@
 		};
 		05AF2D6724AE850B00857E9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05999094259A79D400608D45 /* Default.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -263,7 +277,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQK6S5J9RG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FluffyFriendFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -271,7 +284,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.matuslab.FluffyFriendFinder;
 				PRODUCT_NAME = FluffyFriendFinder;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -285,7 +297,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQK6S5J9RG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FluffyFriendFinder/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -293,7 +304,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.matuslab.FluffyFriendFinder;
 				PRODUCT_NAME = FluffyFriendFinder;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
